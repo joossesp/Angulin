@@ -1,0 +1,57 @@
+
+
+<mat-card>
+    <mat-card-header>
+      <div class="icon" mat-card-avatar>
+        <mat-icon  class={{question.icon}} ></mat-icon>
+      </div>
+      <mat-card-title>
+        <h2>{{question.title}}</h2>
+      </mat-card-title>
+        <mat-card-subtitle>
+          <small>Jose Osses -{{question.createdAt | amLocale:'es' | amTimeAgo}}</small>
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{question.description}}</p>
+    </mat-card-content>
+ </mat-card>
+
+ <div class='answer'>
+   <h3>Respuestas</h3>
+   <ul class='answerlist' >
+     <li>
+       <h5>
+         Paulo Cohelo
+         <small>hace unos momentos</small>
+       </h5>
+       <p class= "description">
+         Hay que vivir y disfrutar en todo momento
+       </p>
+
+     </li>
+     <li>
+        <h5>
+          Paulo Cohelo
+          <small>hace unos momentos</small>
+        </h5>
+        <p class= "description">
+          Amo a mi familia y quiero lo mejor para ellos
+        </p>
+ 
+      </li>
+      <li>
+          <h5>
+            Paulo Cohelo
+            <small>hace unos momentos</small>
+          </h5>
+          <p class= "description">
+            el miedo es una fuerza que reprime a quienes no estan seguros del amor que tienen
+          </p>
+   
+        </li>
+
+   </ul>
+   <app-answer-form></app-answer-form>
+ </div>
+  
